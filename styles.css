@@ -1,0 +1,378 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: rgba(30, 58, 138, 0.95);
+    backdrop-filter: blur(10px);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.sidebar-trigger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(251, 191, 36, 0.2);
+}
+
+.sidebar-header {
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+}
+
+.sidebar-header h2 {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+.lesson-btn {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 5px 0;
+    background: rgba(59, 130, 246, 0.3);
+    border: 2px solid rgba(59, 130, 246, 0.5);
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+    font-weight: 500;
+}
+
+.lesson-btn:hover {
+    background: rgba(59, 130, 246, 0.6);
+    transform: translateX(5px);
+}
+
+.lesson-btn.active {
+    background: #fbbf24;
+    color: #000;
+    border-color: #fbbf24;
+    font-weight: bold;
+}
+
+.lessons-list {
+    margin-top: 10px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+.lessons-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lessons-list::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.lessons-list::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.5);
+    border-radius: 4px;
+}
+
+.lessons-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(59, 130, 246, 0.8);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #7c3aed, #3b82f6, #1e40af);
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fbbf24;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.stats-bar {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stats-bar div {
+    font-size: 1.2rem;
+}
+
+.stats-bar span {
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+/* Lifelines */
+.lifelines {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.lifeline-btn {
+    background: #f97316;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.lifeline-btn:hover {
+    transform: scale(1.05);
+    background: #ea580c;
+}
+
+.lifeline-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.lifeline-btn.skip {
+    background: #8b5cf6;
+}
+
+.lifeline-btn.skip:hover {
+    background: #7c3aed;
+}
+
+.lifeline-btn.hint {
+    background: #10b981;
+}
+
+.lifeline-btn.hint:hover {
+    background: #059669;
+}
+
+/* Question Area */
+.question-container {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.japanese-word {
+    font-size: 5rem;
+    color: #fde68a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.question-prompt {
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+/* Answer Options */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.option-btn {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.option-btn:hover {
+    transform: scale(1.05);
+    background: #2563eb;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+.option-btn.correct {
+    background: #16a34a;
+}
+
+.option-btn.wrong {
+    background: #dc2626;
+}
+
+.option-label {
+    color: #fbbf24;
+    margin-right: 10px;
+}
+
+/* Results Screen */
+.results-screen {
+    display: none;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.results-screen.active {
+    display: block;
+}
+
+.results-screen h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.score-display {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.score-number {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.score-label {
+    font-size: 2rem;
+}
+
+.play-again-btn {
+    background: #fbbf24;
+    color: #000;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.play-again-btn:hover {
+    background: #f59e0b;
+    transform: scale(1.05);
+}
+
+.game-screen.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    color: #fbbf24;
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .japanese-word {
+        font-size: 3rem;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .option-btn {
+        font-size: 1rem;
+    }
+}
