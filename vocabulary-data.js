@@ -2,6 +2,27 @@
 // All vocabulary data organized by lessons
 
 const vocabularyData = [
+    
+    // Lesson 24
+    { japanese: "くれます", meaning: "give (me)", lesson: 24 },
+    { japanese: "つれていきます", meaning: "take (someone)", lesson: 24 },
+    { japanese: "つれてきます", meaning: "bring (someone)", lesson: 24 },
+    { japanese: "おくります [ひとを～]", meaning: "escort [someone], go with", lesson: 24 },
+    { japanese: "しょうかいします", meaning: "introduce", lesson: 24 },
+    { japanese: "あんないします", meaning: "show around, show the way", lesson: 24 },
+    { japanese: "せつめいします", meaning: "explain", lesson: 24 },
+    { japanese: "いれます [コーヒーを～]", meaning: "make [coffee]", lesson: 24 },
+    { japanese: "おじいさん／おじいちゃん", meaning: "grandfather, old man", lesson: 24 },
+    { japanese: "おばあさん／おばあちゃん", meaning: "grandmother, old woman", lesson: 24 },
+    { japanese: "じゅんび", meaning: "preparation (～します: prepare)", lesson: 24 },
+    { japanese: "いみ", meaning: "meaning", lesson: 24 },
+    { japanese: "[お] かし", meaning: "sweets, snacks", lesson: 24 },
+    { japanese: "ぜんぶ", meaning: "all", lesson: 24 },
+    { japanese: "じぶんで", meaning: "by oneself", lesson: 24 },
+    { japanese: "ほかに", meaning: "besides", lesson: 24 },
+    { japanese: "ワゴンしゃ", meaning: "station wagon", lesson: 24 },
+    { japanese: "[お] べんとう", meaning: "box lunch", lesson: 24 },
+    
     // Lesson 25
     { japanese: "かんがえます", meaning: "think, consider", lesson: 25 },
     { japanese: "つきます [えきに～]", meaning: "arrive [at the station]", lesson: 25 },
