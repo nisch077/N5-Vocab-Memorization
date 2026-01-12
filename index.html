@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +48,46 @@
     </div>
 
     <div class="container">
+        <!-- Quiz Mode Selection Screen -->
+        <div class="mode-selection-screen hidden">
+            <header>
+                <h1>🎓 Vocabulary Memorization 🎓</h1>
+                <p class="subtitle">Select Quiz Mode</p>
+            </header>
+
+            <div class="mode-cards">
+                <div class="mode-card" data-mode="easy">
+                    <div class="mode-icon">🟢</div>
+                    <h3>Easy</h3>
+                    <p>5 Questions</p>
+                </div>
+                <div class="mode-card" data-mode="medium">
+                    <div class="mode-icon">🟡</div>
+                    <h3>Medium</h3>
+                    <p>10 Questions</p>
+                </div>
+                <div class="mode-card" data-mode="hard">
+                    <div class="mode-icon">🔴</div>
+                    <h3>Hard</h3>
+                    <p>20 Questions</p>
+                </div>
+                <div class="mode-card" data-mode="custom">
+                    <div class="mode-icon">⚙️</div>
+                    <h3>Custom</h3>
+                    <p>Choose amount</p>
+                </div>
+            </div>
+
+            <div class="custom-input hidden" id="custom-input">
+                <label for="question-count">Number of Questions:</label>
+                <p class="vocab-count" id="vocab-count">Available: <span id="available-count">0</span> questions</p>
+                <input type="number" id="question-count" min="1" max="100" value="15">
+                <button class="start-btn" id="start-custom">Start Quiz</button>
+            </div>
+
+            <button class="back-btn hidden" id="back-to-modes">← Back to Modes</button>
+        </div>
+
         <!-- Game Screen -->
         <div class="game-screen">
             <header>
