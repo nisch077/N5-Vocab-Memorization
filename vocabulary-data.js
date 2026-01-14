@@ -3,6 +3,43 @@
 
 const vocabularyData = [
 
+    //Lesson 21
+    { japanese: "おもいます", meaning: "think", lesson: 21 },
+    { japanese: "いいます", meaning: "say", lesson: 21 },
+    { japanese: "たります", meaning: "be enough, be sufficient", lesson: 21 },
+    { japanese: "かちます", meaning: "win", lesson: 21 },
+    { japanese: "まけます", meaning: "lose, be beaten", lesson: 21 },
+    { japanese: "あります [おまつりが～]", meaning: "[a festival] be held, take place", lesson: 21 },
+    { japanese: "やくにたちます", meaning: "be useful", lesson: 21 },
+    { japanese: "むだ [な]", meaning: "wasteful", lesson: 21 },
+    { japanese: "ふべん [な]", meaning: "inconvenient", lesson: 21 },
+    { japanese: "おなじ", meaning: "the same", lesson: 21 },
+    { japanese: "すごい", meaning: "awful, great (expresses astonishment or admiration)", lesson: 21 },
+    { japanese: "しゅしょう", meaning: "prime minister", lesson: 21 },
+    { japanese: "だいとうりょう", meaning: "president", lesson: 21 },
+    { japanese: "せいじ", meaning: "politics", lesson: 21 },
+    { japanese: "ニュース", meaning: "news", lesson: 21 },
+    { japanese: "スピーチ", meaning: "speech", lesson: 21 },
+    { japanese: "しあい", meaning: "game, match", lesson: 21 },
+    { japanese: "アルバイト", meaning: "side job", lesson: 21 },
+    { japanese: "いけん", meaning: "opinion", lesson: 21 },
+    { japanese: "[お] はなし", meaning: "talk, speech, what one says, story", lesson: 21 },
+    { japanese: "ユーモア", meaning: "humor", lesson: 21 },
+    { japanese: "デザイン", meaning: "design", lesson: 21 },
+    { japanese: "こうつう", meaning: "transportation, traffic", lesson: 21 },
+    { japanese: "ラッシュ", meaning: "rush hour", lesson: 21 },
+    { japanese: "さいきん", meaning: "recently, these days", lesson: 21 },
+    { japanese: "たぶん", meaning: "probably, perhaps, maybe", lesson: 21 },
+    { japanese: "きっと", meaning: "surely", lesson: 21 },
+    { japanese: "ほんとうに", meaning: "really", lesson: 21 },
+    { japanese: "そんなに", meaning: "not so much (used with negatives)", lesson: 21 },
+    { japanese: "～について", meaning: "about ～, concerning ～", lesson: 21 },
+    { japanese: "しかたがありません。", meaning: "There is no other choice. / It can't be helped.", lesson: 21 },
+    { japanese: "しばらくですね。", meaning: "It's been a long time (since I last saw you). / Long time no see.", lesson: 21 },
+    { japanese: "～でものみませんか。", meaning: "How about drinking ～ or something?", lesson: 21 },
+    { japanese: "みないと…", meaning: "I've got to watch it.", lesson: 21 },
+    { japanese: "もちろん", meaning: "of course", lesson: 21 },
+
     //Lesson 22
     { japanese: "きます [シャツを～]", meaning: "put on [a shirt, etc]", lesson: 22 },
     { japanese: "はきます [くつを～]", meaning: "put on [shoes, trousers, etc]", lesson: 22 },
@@ -78,7 +115,7 @@ const vocabularyData = [
     { japanese: "じぶんで", meaning: "by oneself", lesson: 24 },
     { japanese: "ほかに", meaning: "besides", lesson: 24 },
     { japanese: "ワゴンしゃ", meaning: "station wagon", lesson: 24 },
-    { japanese: "[お] べんとう", meaning: "box lunch", lesson: 24 },
+    { japanese: "[お] べんとう", meaning: "lunch box", lesson: 24 },
     { japanese: "ははのひ", meaning: "Mother's Day", lesson: 24 },
     
     // Lesson 25
